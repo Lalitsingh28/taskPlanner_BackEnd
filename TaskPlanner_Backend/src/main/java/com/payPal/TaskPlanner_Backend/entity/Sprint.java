@@ -29,7 +29,7 @@ public class Sprint {
     private Integer id;
 
 	@Enumerated(EnumType.STRING)
-    @Column(name = "day")
+    @Column(name = "weekDay")
     private WeekDays weekDay;
 
     @Column(name = "start_date")
