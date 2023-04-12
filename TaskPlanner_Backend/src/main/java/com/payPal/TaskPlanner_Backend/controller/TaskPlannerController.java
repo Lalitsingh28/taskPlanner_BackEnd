@@ -55,7 +55,7 @@ public class TaskPlannerController {
 	@GetMapping("/user")
 	public ResponseEntity<List<User>> getAllUserHandler() throws UserException{
 		List<User> userList = userService.getAllUser();
-		return new ResponseEntity<List<User>>(userList,HttpStatus.OK);
+		return new ResponseEntity<>(userList,HttpStatus.OK);
 	}
 	
 	@GetMapping("/user/{userId}")
