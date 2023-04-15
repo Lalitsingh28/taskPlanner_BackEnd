@@ -64,8 +64,7 @@ public class TaskPlannerController {
 		return new ResponseEntity<User>(user,HttpStatus.OK);
 	}
 	
-	
-	
+		
 	// Task Api's
 	
 	@PostMapping("/task/save")
@@ -97,8 +96,7 @@ public class TaskPlannerController {
 		Task task = taskService.updateTaskStatus(taskId, status);
 		return new ResponseEntity<>(task,HttpStatus.ACCEPTED);
 	}
-	
-	
+		
 	// Sprint Api's
 	
 	@PostMapping("/sprint/save")
