@@ -97,7 +97,7 @@ public class TaskPlannerController {
 		return new ResponseEntity<>(task,HttpStatus.ACCEPTED);
 	}
 		
-	// Sprint Api's
+	//Sprint Api's
 	
 	@PostMapping("/sprint/save")
 	public ResponseEntity<Sprint> addSprintHandler(@RequestBody Sprint sprint){
